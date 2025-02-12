@@ -19,8 +19,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- owl end -->
 
-
 <link rel="shortcut icon" href="./images/loader.png">
+
   <style>
     .swiper-pagination-bullet {
       width: 22px;
@@ -57,7 +57,6 @@
       <a class="navbar-brand d-lg-none" href="index.html">
         <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 150px;"/>
         </a>
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,11 +66,11 @@
 
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
 
         <a class="navbar-brand d-none d-lg-block" href="index.html">
             <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 200px;"/>
@@ -81,193 +80,115 @@
                 <a class="nav-link" href="tel:8978364838">Call: +91 8978364838</a>
               </li>
               <li class="nav-item">
-                <a class="btn-default" href="get-a-quote">Get a Quote</a>
+                <a class="btn-default" href="quote.html">Get a Quote</a>
               </li>
 
             </ul>
       </div>
     </nav>
-  </header><section class="breadcrum" style="background-image: url(./images/gallery.jpg);">
-<div class="hightlight-flower" style="z-index: 3;">
-      <div id="scene3">
-        <img src="./images/flowers3.webp" class="img-fluid" data-depth="0.30" />
-      </div>
+  </header><section class="breadcrum" style="background-image: url(images/contact.jpeg);">
+  <div class="hightlight-flower" style="z-index: 3;">
+    <div id="scene3">
+      <img src="images/flowers3.webp" class="img-fluid" data-depth="0.30" />
     </div>
+  </div>
   <div class="container">
     <div class="breadcrum-content text-center">
-      <h1 class="wow animate__animated animate__slideInDown" data-wow-duration="2s">Gallery</h1>
+      <h1 class="wow animate__animated animate__slideInDown" data-wow-duration="2s">Get a Quote</h1>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+          <li class="breadcrumb-item active" aria-current="page">Quote</li>
         </ol>
       </nav>
     </div>
   </div>
 </section>
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 wow animate__animated animate__fadeInUp">
+        <div class="quote shadow-lg">
+          <div class="titlemain text-center mb-5">
+            <div class="title">
+              <div class="subheading">Be<span></span>In Touch</div>
+              <h2 class="heading">Enquire Now</h2>
+              <p>We’re always ready to help and make your event better.</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="include/sendquote" method="POST">
+              <div class="form-group row">
+                <div class="col-lg-6 mb-3">
+                  <input name="name" type="text" class="form-control" placeholder="Enter Your Name" required>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <input name="phone" type="number" class="form-control" placeholder="Enter Your phone Number" required>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <input name="email" type="email" class="form-control" placeholder="Enter Your Email Address" required>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <select class="form-control" name="event">
+                    <option value="">Select Your Event</option>
+                    <option value="Weddings">Weddings</option>
+                    <option value="Special Events">Special Events</option>
+                    <option value="Corporate Events">Corporate Events</option>
+                  </select>
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <textarea name="message" class="form-control" rows="3" placeholder="Enter Your Query"></textarea>
+                </div>
+              </div>
 
-<section class="section-padding overflow-hidden">
-<div class="container gallerymob">
-    <div class="titlemain mb-5">
-      <div class="title text-center">
-        <div class="subheading">Our<span></span>Gallery</div>
-
-
-
+              <button name="submit" type="submit" class="btn-default">Send Message</button>
+            </form>
+          </div>
+        </div>
 
       </div>
+
+      <div class="col-md-4">
+        <ul class="portfolio-masonry">
+          <li class="wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            <figure><img src="images/gallery1.jpeg" alt="Image">
+              <a href="images/gallery1.jpeg" data-rel="gallery" class="swipebox" title="Ceremony">
+                <figcaption class="bg-color2">
+                  <div class="table">
+                    <div class="inner">Ceremony</div>
+                  </div>
+                </figcaption>
+              </a>
+            </figure>
+          </li>
+          <li class=" wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+            <figure><img src="images/gallery2.jpeg" alt="Image">
+              <a href="images/gallery2.jpeg" data-rel="gallery" class="swipebox" title="Ceremony">
+                <figcaption class="bg-color1">
+                  <div class="table">
+                    <div class="inner">Ceremony</div>
+                  </div>
+                </figcaption>
+              </a>
+            </figure>
+          </li>
+          <!-- <li class=" wow animate__animated animate__fadeInUp" data-wow-duration="3s">
+            <figure><img src="images/gallery3.jpeg" alt="Image">
+              <a href="images/gallery3.jpeg" data-rel="gallery" class="swipebox" title="Ceremony">
+                <figcaption class="bg-color1">
+                  <div class="table">
+                    <div class="inner">Ceremony</div>
+                  </div>
+                </figcaption>
+              </a>
+            </figure>
+          </li> -->
+        </ul>
+      </div>
+
+
+
     </div>
-
-
-
-<div class="filters filter-button-group">
-	<ul>
-		<li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
-		<li><a href="javascript:void(0);" data-filter="celebration">Celebrations</a></li>
-		<!-- <li><a href="javascript:void(0);" data-filter="chapra">Chapra</a></li>
-        <li><a href="javascript:void(0);" data-filter="edhira">Edhirakollu</a></li> -->
-
-        <li><a href="javascript:void(0);" data-filter="engag">Engagement</a></li>
-		<li><a href="javascript:void(0);" data-filter="haldi">Haldi</a></li>
-        <!-- <li><a href="javascript:void(0);" data-filter="hightea">High Tea</a></li> -->
-
-        <!-- <li><a href="javascript:void(0);" data-filter="kurnool">Kurnool</a></li>
-		<li><a href="javascript:void(0);" data-filter="kurnoolrecep">Kurnool Reception</a></li> -->
-        <!-- <li><a href="javascript:void(0);" data-filter="satya">Satyanarayan</a></li> -->
-        <li><a href="javascript:void(0);" data-filter="wedd">Weddings</a></li>
-
-        <li><a href="javascript:void(0);" data-filter="recep">Reception</a></li>
-
-        <li><a href="javascript:void(0);" data-filter="birthd">Birthdays</a></li>
-        <li><a href="javascript:void(0);" data-filter="babyshow">Baby Shower</a></li>
-	</ul>
-</div>
-	<div id="container" class="isotope">
-
-		<div class="grid-item" data-filter="celebration">
-        <a class="popupimg" href="./images/gallery1.jpeg">
-        <img src="./images/gallery1.jpeg">
-        </a>
-
-        </div>
-
-        <div class="grid-item" data-filter="celebration">
-        <a class="popupimg" href="./images/gallery2.jpeg">
-        <img src="./images/gallery2.jpeg">
-        </a>
-
-        </div>
-
-        <div class="grid-item" data-filter="celebration">
-            <a class="popupimg" href="./images/gallery3.jpeg">
-            <img src="./images/gallery3.jpeg">
-            </a>
-
-            </div>
-
-            <div class="grid-item" data-filter="celebration">
-                <a class="popupimg" href="./images/gallery4.jpeg">
-                <img src="./images/gallery4.jpeg">
-                </a>
-
-                </div>
-
-
-        <div class="grid-item" data-filter="babyshow">
-        <a class="popupimg" href="./images/gallery5.jpeg">
-        <img src="./images/gallery5.jpeg">
-        </a>
-        </div>
-
-        <div class="grid-item" data-filter="birthd">
-        <a class="popupimg" href="./images/gallery6.jpeg">
-        <img src="./images/gallery6.jpeg">
-        </a>
-        </div>
-
-        <div class="grid-item" data-filter="birthd">
-        <a class="popupimg" href="./images/gallery7.jpeg">
-        <img src="./images/gallery7.jpeg">
-        </a>
-        </div>
-
-        <div class="grid-item" data-filter="birthd">
-        <a class="popupimg" href="images/birthday.webp">
-        <img src="images/birthday.webp">
-        </a>
-        </div>
-
-
-
-        <div class="grid-item" data-filter="recep">
-        <a class="popupimg" href="images/banner.jpeg">
-        <img src="images/banner.jpeg">
-        </a>
-        </div>
-
-        <div class="grid-item" data-filter="recep">
-        <a class="popupimg" href="images/banner.jpg">
-        <img src="images/banner.jpg">
-        </a>
-        </div>
-
-
-
-
-
-
-        <div class="grid-item" data-filter="engag">
-        <a class="popupimg" href="images/gallery1.jpeg">
-        <img src="images/gallery1.jpeg">
-        </a>
-        </div>
-
-        <div class="grid-item" data-filter="engag">
-        <a class="popupimg" href="images/gallery2.jpeg">
-        <img src="images/gallery2.jpeg">
-        </a>
-        </div>
-
-
-
-        <div class="grid-item" data-filter="haldi">
-        <a class="popupimg" href="./images/haldi.jpg">
-        <img src="./images/haldi.jpg">
-        </a>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="grid-item" data-filter="wedd">
-        <a class="popupimg" href="./images/pelli.jpeg">
-        <img src="./images/pelli.jpeg">
-        </a>
-        </div>
-
-        <div class="grid-item" data-filter="wedd">
-        <a class="popupimg" href="./images/entry.webp">
-        <img src="./images/entry.webp">
-        </a>
-        </div>
-
-
-
-
-
-
-
-
-
-
-	</div>
-
-
 
   </div>
 </section>
@@ -316,7 +237,7 @@
         </div>
 
         <div class="col-lg-12 copyright">
-          <p>© 2025 Mythri Event Planners. All Rights Reserved.Designed By IES</p>
+            <p>© 2025 Mythri Event Planners. All Rights Reserved.Designed By IES</p>
         </div>
 
 
@@ -567,8 +488,23 @@ $('.popupimg').magnificPopup({
 </body>
 
 </html><script>
-   const scene3 = document.getElementById('scene3');
+  const scene3 = document.getElementById('scene3');
   const parallaxInstance3 = new Parallax(scene3, {
     relativeInput: true
   });
+  let macy = Macy({
+    container: '.portfolio-masonry',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 15,
+    columns: 1,
+    breakAt: {
+      1400: 1,
+      940: 1,
+      520: 1,
+      400: 1
+    }
+  });;
+
+  $('.swipebox').swipebox();
 </script>

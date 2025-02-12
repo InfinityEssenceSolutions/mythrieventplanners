@@ -1,495 +1,904 @@
 
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Mythri Event Planner</title>
-    <meta name="description" content="Gaala Wedding Planners is an innovative company specialized in organizing events with an enviable reputation for high quality and customer focus. Our approach is professional, passionate and focused placing the customer at the heart of everything we do.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keyword" content="wedding planner, guruvayoor Wedding, event management, stage decorator, event management in thrissur">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/loader.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<!-- CSS here -->
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="./assets/css/slicknav.csss">
-    <link rel="stylesheet" href="./assets/css/flaticon.css">
-    <link rel="stylesheet" href="./assets/css/gijgo.css">
-	<link rel="stylesheet" href="./assets/css/animate.min.css">
-	<link rel="stylesheet" href="./assets/css/magnific-popup.css">
-	<link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="./assets/css/themify-icons.css">
-	<link rel="stylesheet" href="./assets/css/slick.css">
-	<link rel="stylesheet" href="./assets/css/nice-select.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Mythri Event Planner</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/swipebox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<!-- owl start -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- owl end -->
+
+
+  <link rel="shortcut icon" href="./images/loader.png">
+  <style>
+    .swiper-pagination-bullet {
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      border: 4px #555 solid;
+      opacity: 1;
+      background: #fff;
+    }
+
+    .swiper-pagination-bullet-active {
+      border: 4px #111 solid;
+    }
+  </style>
+
+
+
+
+
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="./assets/images/loader.png" alt="">
-                </div>
-            </div>
-        </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+      <!--  Show this only on mobile to medium screens  -->
+      <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 150px;"/>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--  Use flexbox utility classes to change how the child elements are justified  -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+        <a class="navbar-brand d-none d-lg-block" href="index.html">
+        <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 200px;"/>
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="tel:8978364838">Call: +91 8978364838</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn-default" href="get-a-quote">Get a Quote</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+<!-- Swiper -->
+<section class="promo-slider">
+  <div id="scene" class="secene-holder">
+    <div class="promo-slider__decor_1 layer" data-depth="0.30">
+      <img src="./images/flowers.webp" alt="flowers">
     </div>
-    <!-- Preloader Start -->
-<header>
-    <!--? Header Start -->
-    <div class="header-area">
-        <div class="main-header header-sticky">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Logo -->
-                    <div class="col-xl-2 col-lg-2 col-md-1">
-                        <div class="logo">
-                            <a href="index.html"><img src="./assets/images/Mythri Events Logo.png" alt="" style="max-width: 200px;"></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-10 col-lg-10 col-md-10">
-                        <div class="menu-main d-flex align-items-center justify-content-end">
-                            <!-- Main-menu -->
-                            <div class="main-menu f-right d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about_us.html">About</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <!-- <li><a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">Element</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="#Contact">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="https://wa.me/+918978364838" class="btn header-btn"><i class="fab fa-whatsapp"></i> Chat with Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu -->
-                    <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="promo-slider__decor_2 layer" data-depth="0.15">
+      <img src="./images/flowers1.webp" alt="flowers">
     </div>
-    <!-- Header End -->
-</header>
-<main>
-    <!--? slider Area Start-->
-    <div class="slider-area position-relative" id="Home">
-        <div class="slider-active">
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-10">
-                            <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay=".1s">Celebrate the big day</span>
-                                <h1 data-animation="fadeInLeft" data-delay=".5s">With Your Perfect Event Planner</h1>
-                                <!-- Hero-btn -->
-                                <div class="slider-btns">
-                                    <a data-animation="fadeInLeft" data-delay="1.0s" href="#About" class="btn hero-btn">About Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-10">
-                            <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay=".1s">Our passion is to ensure that</span>
-                                <h1 data-animation="fadeInLeft" data-delay=".5s">Your Special Day Is Just Perfect</h1>
-                                <!-- Hero-btn -->
-                                <div class="slider-btns">
-                                    <a data-animation="fadeInLeft" data-delay="1.0s" href="#About" class="btn hero-btn">About Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </div>
+  <div class="promo-slider__bg swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url(./images/banner.jpg);">
+        <div class="slider-content">
+          <h1 class="slider-content-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">Creating Memorable Events for you</h1>
+       <p>A true Progressive & Trendsetter in the events industry.<br>
+        The Celebrators founded in 2015, is a boutique oriented floral design,<br> event design, event planning and full service event production company</p>
+          <a class="btn-default" href="get-a-quote">Hire a Professional</a>
         </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url(./images/banner.jpeg);">
+        <div class="slider-content">
+          <h2 class="slider-content-heading">Exceptional experiences that you can delight forever</h2>
+          <p>Our team looks forward to curating spectacular experiences<br> and ensures you have memories to last a lifetime</p>
+          <a class="btn-default" href="get-a-quote">Hire a Professional</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url(./images/banner.jpg);">
+        <div class="slider-content">
+          <h2 class="slider-content-heading">Delivering Trusted Services for all your occasions</h2>
+          <p>We will manage all your needs and ensure that you enjoy<br> yourself stress-free without any hassles of planning</p>
+          <a class="btn-default" href="get-a-quote">Hire a Professional</a>
+        </div>
+      </div>
+
     </div>
-    <!-- slider Area End-->
-    <!--? About Law Start-->
-    <section class="about-low-area section-padding2" id="About">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="about-caption mb-50">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-35">
-                            <h2>Turning your moments into timeless memories.</h2>
-                        </div>
-                        <p>We believe that success is achieved with client satisfaction. Your Special event moments are the most memorable and cherished moments in life. We create these moments into unique moments and everlasting memories. </p>
-                        <p>Gaala Wedding Planners is an innovative company specialized in organizing events with an enviable reputation for high quality and customer focus. Our approach is professional, passionate and focused placing the customer at the heart of everything we do.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                            <div class="single-caption mb-20">
-                                <div class="caption-icon">
-                                    <span class="fa fa-map-marker"></span>
-                                </div>
-                                <div class="caption">
-                                    <h5>Where</h5>
-                                    <p>Ukkunagaram, Vishakapatnam</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                            <div class="single-caption mb-20">
-                                <div class="caption-icon">
-                                    <span class="flaticon-education"></span>
-                                </div>
-                                <div class="caption">
-                                    <h5>When</h5>
-                                    <p>Jan. 21. 2021</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <a href="#Contact" class="btn mt-50">Contact Us</a>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <!-- about-img -->
-                    <div class="about-img ">
-                        <div class="about-font-img d-none d-lg-block">
-                            <img src="./assets/images/bg.jpeg" alt="" style = "width:700px; height: 720px">
-                        </div>
-                        <div class="about-back-img" style="display: none;">
-                            <img src="./assets/images/bg1.jpeg" alt="" style="width: 100%; height: auto;">
-                        </div>
-
-                        <script>
-                            function toggleImageDisplay() {
-                                if (window.innerWidth <= 991.98) {
-                                    document.querySelector('.about-back-img').style.display = 'block';
-                                } else {
-                                    document.querySelector('.about-back-img').style.display = 'none';
-                                }
-                            }
-
-                            // Initial check
-                            toggleImageDisplay();
-
-                            // Update on window resize
-                            window.addEventListener('resize', toggleImageDisplay);
-                        </script>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Law End-->
-
-    <!--? Brand Area Start -->
-    <section class="team-area pt-100 pb-100 section-bg" data-background="./assets/images/sections.jpg" id="Services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle section-tittle2 mb-50 text-center">
-                        <h2>Services We Do.</h2>
-                        <p>We listen to you, working closely and intently with you and your family to create a special event that is completely unique as you want it to be. </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/barasala.jpg" alt="" style = "height: 350px">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Barasala / Cradle Cermony</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/birthday.webp" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Birthday Decorations</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/bride.avif" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Bridal / Groom Cermony</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/haldi.jpg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Haldi / Mehandi</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/pelli.jpeg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Pelli Pandiri</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/entrys.jpg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Special Entry's</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/sangeeth.jpeg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Sangeeth Celebrations</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/house_warming.jpeg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">House Warming Cermony</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Brand Area End -->
-
-    <!--? gallery Products Start -->
-    <div class="gallery-area fix" id="Portfolio">
-        <div class="container pt-100 pb-100">
-            <div class="section-tittle section-tittle mb-50 text-center">
-                <h2>Gallery</h2>
-            </div>
-            <div class="row gallery-item">
-                <div class="col-md-4">
-                    <a href="./assets/images/gallery1.jpeg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(./assets/images/gallery1.jpeg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="./assets/images/gallery2.jpeg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(./assets/images/gallery2.jpeg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="./assets/images/gallery3.jpeg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(./assets/images/gallery3.jpeg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="./assets/images/gallery4.jpeg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(./assets/images/gallery4.jpeg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="./assets/images/gallery5.jpeg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(./assets/images/gallery5.jpeg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="./assets/images/gallery6.jpeg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(./assets/images/gallery6.jpeg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="./assets/images/gallery7.jpeg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(./assets/images/gallery7.jpeg);"></div>
-                    </a>
-                </div>
-                <!-- <div class="col-md-4">
-                    <a href="assets/img/portfolio/g8.jpg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(assets/img/portfolio/g8.jpg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="assets/img/portfolio/g9.jpg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(assets/img/portfolio/g9.jpg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="assets/img/portfolio/g10.jpg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(assets/img/portfolio/g10.jpg);"></div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="assets/img/portfolio/g11.jpg" class="img-pop-up">
-                        <div class="single-gallery-image" style="background: url(assets/img/portfolio/g11.jpg);"></div>
-                    </a>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- gallery Products End -->
-
-    </main>
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding" id="Contact">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                             <div class="footer-tittle">
-                                 <div class="footer-logo mb-20">
-                                    <a href="index.html"><img src="./assets/images/Mythri Events Logo.png" alt="" style="max-width: 220px"></a>
-                                </div>
-                                 <div class="footer-pera">
-                                     <p>We makes your events stand out from conventional events decors and planners. We gather our strength from our long experience and our creativity.</p>
-                                </div>
-                             </div>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Contact Info</h4>
-                                <ul>
-                                    <li>
-                                        <p>Address :Ukkunagaram, Vishakapatnam, Pin 530032.</p>
-                                    </li>
-                                    <li><a href="tel:+918978364838">Phone : +91 8978364838</a>, <a href="tel:+919119345672"> +91 9119345672</a></li>
-                                    <!-- <li><a href="tel:+918848318806">Phone : +91 8848318806</a></li> -->
-                                    <li><a href="">Email : mythrieventplanners@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Quick Link</h4>
-                                <ul>
-                                    <li><a href="#Home"> Home</a></li>
-                                    <li><a href="#About">About Us</a></li>
-                                    <li><a href="#Services">Services</a></li>
-                                    <li><a href="#Portfolio">Portfolio</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Social Link</h4>
-                                <ul>
-                                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                                    <li><a href="https://wa.me/+918978364838" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area footer-bg">
-            <div class="container">
-                <div class="footer-border">
-                     <div class="row d-flex justify-content-between align-items-center">
-                         <div class="col-xl-10 col-lg-8 ">
-                             <div class="footer-copy-right">
-                                 <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart" aria-hidden="true" style="color: #fff;"></i> by <a href="#" target="_blank" style="color: #000;"> IES</a></p>
-                             </div>
-                         </div>
-                         <div class="col-xl-2 col-lg-4">
-                             <div class="footer-social f-right">
-                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://wa.me/+918978364838" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
-                             </div>
-                         </div>
-                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#" style = "color: #fff"> <i class="fas fa-level-up-alt"></i></a>
+    <!-- Add Arrows -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<section class="section-padding services">
+  <div class="container-fluid">
+    <div class="titlemain text-center mb-5">
+      <div class="title">
+        <div class="subheading">What we<span></span>Offer</div>
+        <h2 class="heading">Our Core Services</h2>
+      </div>
     </div>
 
-    <!-- JS here -->
+    <div class="row">
+      <div class="col-lg-3 wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <div class="category-card">
+          <div class="category-card-inner">
+            <div class="category-card__front">
+              <div class="category-card__img ibg">
+                <img src="./images/pelli.jpeg" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Pelli Pandiri</h5>
+              </div>
+            </div>
+            <div class="category-card__back">
+              <div class="category-card__img ibg">
+                <img src="./images/pelli_pandiri.jpeg" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Pelli Pandiri</h5>
+                <p>We help you breathe life into your imagination by conceptualizing and designing what you are truly envisioning.</p>
+              </div>
+            </div>
+          </div>
 
-    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="./assets/js/jquery.slicknav.min.js"></script>
+        </div>
 
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="./assets/js/wow.min.js"></script>
-    <script src="./assets/js/animated.headline.js"></script>
-    <script src="./assets/js/jquery.magnific-popup.js"></script>
+      </div>
+      <div class="col-lg-3 wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+        <div class="category-card lift">
+          <div class="category-card-inner">
+            <div class="category-card__front">
+              <div class="category-card__img ibg">
+                <img src="./images/barasala.jpg" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Barasala / Cradle Cermony</h5>
+              </div>
+            </div>
+            <div class="category-card__back">
+              <div class="category-card__img ibg">
+                <img src="./images/cradle.jpg" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Barasala / Cradle Cermony</h5>
+                <p>Our creative designers look forward to curate awe-inspiring wedding decors for your special day</p>
+              </div>
+            </div>
+          </div>
 
-    <!-- Date Picker -->
-    <script src="./assets/js/gijgo.min.js"></script>
-    <!-- Nice-select, sticky -->
-    <script src="./assets/js/jquery.nice-select.min.js"></script>
-    <script src="./assets/js/jquery.sticky.js"></script>
+        </div>
 
-    <!-- counter , waypoint -->
-    <script src="./assets/js/jquery.counterup.min.js"></script>
-    <script src="./assets/js/waypoints.min.js"></script>
-    <script src="./assets/js/jquery.countdown.min.js"></script>
-    <!-- contact js -->
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/jquery.form.js"></script>
-    <script src="./assets/js/jquery.validate.min.js"></script>
-    <script src="./assets/js/mail-script.js"></script>
-    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+      </div>
 
-    <!-- Jquery Plugins, main Jquery -->
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/main.js"></script>
+      <div class="col-lg-3 wow animate__animated animate__fadeInUp" data-wow-duration="3s">
+        <div class="category-card">
+          <div class="category-card-inner">
+            <div class="category-card__front">
+              <div class="category-card__img ibg">
+                <img src="./images/haldi.jpg" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Haldi / Mehandi</h5>
+              </div>
+            </div>
+            <div class="category-card__back">
+              <div class="category-card__img ibg">
+                <img src="./images/Haldi.png" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Haldi / Mehandi</h5>
+                <p>Our team of professional planners help you with vendor sourcing and allow you to enjoy the wedding planning process</p>
+              </div>
+            </div>
+          </div>
 
-    </body>
-</html>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+        <div class="category-card lift">
+          <div class="category-card-inner">
+            <div class="category-card__front">
+              <div class="category-card__img ibg">
+                <img src="./images/entrys.jpg" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Special Entry's</h5>
+              </div>
+            </div>
+            <div class="category-card__back">
+              <div class="category-card__img ibg">
+                <img src="./images/entry.webp" alt="img">
+              </div>
+              <div class="category-card__content">
+                <div class="category-card__icon">
+                  <div class="ring"></div>
+                </div>
+                <h5 class="category-card__title">Special Entry's</h5>
+                <p>As we execute your vision we ensure to look after every intricate detail and create an unforgettable experience for both you and your guests.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section-padding overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-duration="1s">
+        <div class="titlemain mb-5">
+          <div class="title">
+            <div class="subheading">Curating everlasting<span></span>experiences</div>
+            <h2 class="heading">Turning your moment's into timeless memories</h2>
+          </div>
+        </div>
+        <p>From birthdays to family get-togethers, baby showers to anniversaries and festival celebrations, we cater to all your special occasions while ensuring you enjoy every bit of the celebration without the hassles of planning. We ensure to manage all our clients’ needs and look forward to delivering outstanding experiences that you can delight in forever.</p>
+
+        <a class="btn-default mt-4" href="portfolio">Read More</a>
+
+      </div>
+
+      <div class="col-lg-6 wow animate__animated animate__fadeInRight" data-wow-duration="1s">
+        <div class="moments text-center">
+          <img src="./images/bg1.jpeg" class="img-fluid rounded-pill shadow-lg" />
+          <div class="momentflower">
+            <div id="scene2">
+              <img src="" class="img-fluid" data-depth="0.15" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section-padding position-relative">
+  <div class="hightlight-flower">
+    <div id="scene3">
+      <img src="./images/flowers3.webp" class="img-fluid" data-depth="0.30" />
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="1s">
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <a href = "service_page.html"> <img src="./images/birthday.png" alt="icon"></a>
+          </div>
+          <h4>Birthday Celebrations</h4>
+          <p>Curating birthday celebrations planned to perfection while focusing on all details  </p>
+        </div>
+      </div>
+      <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="2s">
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <a href = "service_page.html"><img src="./images/baby.png" alt="icon"></a>
+          </div>
+          <h4>Baby Showers</h4>
+          <p>Plan a perfect baby shower that stays true to the honoree’s personal taste and style with us </p>
+        </div>
+      </div>
+      <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="3s">
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <a href = "service_page.html"><img src="./images/corporate.gif" alt="icon"></a>
+          </div>
+          <h4>Corporate Events</h4>
+          <p>Creating corporate events that go well along with the mission of the company</p>
+        </div>
+      </div>
+
+        <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="2s">
+            <div class="advantages__item">
+            <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/wedding.png" alt="icon">    </a>
+            </div>
+            <h4>Wedding Celebrations</h4>
+            <p>Make your near and dear ones feel special as you plan family events with our bespoke event planning services.</p>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section-padding overflow-hidden">
+  <div class="container">
+    <div class="titlemain text-center mb-5">
+      <div class="title">
+        <div class="subheading">Our<span></span>Gallery</div>
+        <h2 class="heading">Memories Galore</h2>
+        <p>We make sure your event stands out in all respects and take pride in creating events that are truly spectacular.</p>
+      </div>
+    </div>
+    <div class="filters filter-button-group">
+        <ul>
+            <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+            <li><a href="javascript:void(0);" data-filter="celebration">Celebrations</a></li>
+            <!-- <li><a href="javascript:void(0);" data-filter="chapra">Chapra</a></li>
+            <li><a href="javascript:void(0);" data-filter="edhira">Edhirakollu</a></li> -->
+
+            <li><a href="javascript:void(0);" data-filter="engag">Engagement</a></li>
+            <li><a href="javascript:void(0);" data-filter="haldi">Haldi</a></li>
+            <!-- <li><a href="javascript:void(0);" data-filter="hightea">High Tea</a></li> -->
+
+            <!-- <li><a href="javascript:void(0);" data-filter="kurnool">Kurnool</a></li>
+            <li><a href="javascript:void(0);" data-filter="kurnoolrecep">Kurnool Reception</a></li> -->
+            <!-- <li><a href="javascript:void(0);" data-filter="satya">Satyanarayan</a></li> -->
+            <li><a href="javascript:void(0);" data-filter="wedd">Weddings</a></li>
+
+            <li><a href="javascript:void(0);" data-filter="recep">Reception</a></li>
+
+            <li><a href="javascript:void(0);" data-filter="birthd">Birthdays</a></li>
+            <li><a href="javascript:void(0);" data-filter="babyshow">Baby Shower</a></li>
+        </ul>
+    </div>
+        <div id="container" class="isotope">
+
+            <div class="grid-item" data-filter="celebration">
+            <a class="popupimg" href="./images/gallery1.jpeg">
+            <img src="./images/gallery1.jpeg">
+            </a>
+
+            </div>
+
+            <div class="grid-item" data-filter="celebration">
+            <a class="popupimg" href="./images/gallery2.jpeg">
+            <img src="./images/gallery2.jpeg">
+            </a>
+
+            </div>
+
+            <div class="grid-item" data-filter="celebration">
+                <a class="popupimg" href="./images/gallery3.jpeg">
+                <img src="./images/gallery3.jpeg">
+                </a>
+
+                </div>
+
+                <div class="grid-item" data-filter="celebration">
+                    <a class="popupimg" href="./images/gallery4.jpeg">
+                    <img src="./images/gallery4.jpeg">
+                    </a>
+
+                    </div>
+
+
+            <div class="grid-item" data-filter="babyshow">
+            <a class="popupimg" href="./images/gallery5.jpeg">
+            <img src="./images/gallery5.jpeg">
+            </a>
+            </div>
+
+            <div class="grid-item" data-filter="birthd">
+            <a class="popupimg" href="./images/gallery6.jpeg">
+            <img src="./images/gallery6.jpeg">
+            </a>
+            </div>
+
+            <div class="grid-item" data-filter="birthd">
+            <a class="popupimg" href="./images/gallery7.jpeg">
+            <img src="./images/gallery7.jpeg">
+            </a>
+            </div>
+
+            <div class="grid-item" data-filter="birthd">
+            <a class="popupimg" href="images/birthday.webp">
+            <img src="images/birthday.webp">
+            </a>
+            </div>
+
+
+
+            <div class="grid-item" data-filter="recep">
+            <a class="popupimg" href="images/banner.jpeg">
+            <img src="images/banner.jpeg">
+            </a>
+            </div>
+
+            <div class="grid-item" data-filter="recep">
+            <a class="popupimg" href="images/banner.jpg">
+            <img src="images/banner.jpg">
+            </a>
+            </div>
+
+
+
+
+
+
+            <div class="grid-item" data-filter="engag">
+            <a class="popupimg" href="images/gallery1.jpeg">
+            <img src="images/gallery1.jpeg">
+            </a>
+            </div>
+
+            <div class="grid-item" data-filter="engag">
+            <a class="popupimg" href="images/gallery2.jpeg">
+            <img src="images/gallery2.jpeg">
+            </a>
+            </div>
+
+
+
+            <div class="grid-item" data-filter="haldi">
+            <a class="popupimg" href="./images/haldi.jpg">
+            <img src="./images/haldi.jpg">
+            </a>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="grid-item" data-filter="wedd">
+            <a class="popupimg" href="./images/pelli.jpeg">
+            <img src="./images/pelli.jpeg">
+            </a>
+            </div>
+
+            <div class="grid-item" data-filter="wedd">
+            <a class="popupimg" href="./images/entry.webp">
+            <img src="./images/entry.webp">
+            </a>
+            </div>
+
+
+
+
+        </div>
+
+  </div>
+</section>
+
+<section class="section-padding position-relative">
+  <div class="overflow-hidden position-absolute w-100 h-100">
+    <div class="hightlight-flower hightlight-flower2">
+      <div id="scene4">
+        <img src="images/slider/flowers3.png" class="img-fluid" data-depth="0.15" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="titlemain text-center mb-5">
+      <div class="title">
+        <div class="subheading">What our<span></span>Clients Say</div>
+        <h2 class="heading">Kind Words</h2>
+        <p>Our Client’s Valuable Feedback</p>
+      </div>
+    </div>
+
+
+    <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="testimonials-slider__photo ibg">
+              <span>
+                <img src="images/avatar.png" alt="">
+              </span>
+            </div>
+            <div class="testimonials-slider__name">Shwetha Kalappa Bopanna </div>
+            <div class="testimonials-slider__text">Was planning a science theme party on my terrace… It is difficult to find planners who take up these assignments and do a great job at it. Shweta Malik from The Celebrators partnered with me to plan and execute the party really well. It was just the way I had imagined. Glad I found a great event planner.
+            </div>
+            </div>
+            <div class="item">
+              <div class="testimonials-slider__photo ibg">
+              <span>
+                <img src="images/avatar.png" alt="">
+              </span>
+            </div>
+            <div class="testimonials-slider__name">Paromita Mazumdar</div>
+            <div class="testimonials-slider__text">Thank you very much for making it a beautiful evening for us… ‘The Celebrators’... you are awesome.
+            </div>
+            </div>
+            <div class="item">
+              <div class="testimonials-slider__photo ibg">
+              <span>
+                <img src="images/avatar.png" alt="">
+              </span>
+            </div>
+            <div class="testimonials-slider__name">GoSports Foundation</div>
+            <div class="testimonials-slider__text">“Thank you so much for your help.”
+            </div>
+            </div>
+            <div class="item">
+              <div class="testimonials-slider__photo ibg">
+              <span>
+                <img src="images/avatar.png" alt="">
+              </span>
+            </div>
+            <div class="testimonials-slider__name">Akila Visveswaran</div>
+            <div class="testimonials-slider__text">“Lovely décor, Shweta, I am sure my daughter is going to love it when she realizes how her first birthday was celebrated. Thank you for making it so special. The return gifts were very well appreciated. Everything turned out to be so perfect! Tattoo artists were exemplary! Over all PERFECT!
+            </div>
+            </div>
+            <!-- <div class="item">
+              <div class="testimonials-slider__photo ibg">
+              <span>
+                <img src="images/testimonial/avatar.png" alt="">
+              </span>
+            </div>
+            <div class="testimonials-slider__name">Vismaya Phulari</div>
+            <div class="testimonials-slider__text">She’s simply amazing. Spoke to a lot of planners, but no one like her. She’s dedicated, hardworking and takes all the hassles out of party planning! I really didn’t make it easy on her – difficult theme, very specific requirements… but she did it all and so well!”
+            </div>
+            </div> -->
+            <!-- <div class="item">
+              <div class="testimonials-slider__photo ibg">
+              <span>
+                <img src="images/testimonial/avatar.png" alt="">
+              </span>
+            </div>
+            <div class="testimonials-slider__name">Suruchi Arora</div>
+            <div class="testimonials-slider__text">The Farm theme was fabulously showcased by Shweta through her creativity. The decoration done by her and her team was truly captivating. The cake table was done beautifully. Thanks for making it memorable.
+            </div>
+            </div> -->
+            <!-- <div class="item">
+              <div class="testimonials-slider__photo ibg">
+              <span>
+                <img src="images/testimonial/avatar.png" alt="">
+              </span>
+            </div>
+            <div class="testimonials-slider__name">Aparna</div>
+            <div class="testimonials-slider__text">Thank you so much for all your help yesterday. We loved it!
+            </div>
+            </div> -->
+
+          </div>
+
+
+
+  </div>
+</section>
+
+
+  <footer class="section-padding bg-alternative pb-3">
+    <div class="container">
+      <div class="text-center mb-5">
+      <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 200px;"/>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 mb-4">
+          <div class="footer-wigdet">
+            <h5 class="mb-3">Request a Callback</h5>
+            <p>Don’t miss our significant news and season sales.</p>
+          </div>
+          <form action="include/sendcallback" method="POST">
+            <div class="mb-3">
+              <input type="number" name="phone" class="form-control" placeholder="Enter Your phone Number" required>
+            </div>
+
+            <button name="submit" type="submit" class="btn-default">Submit</button>
+          </form>
+        </div>
+
+        <div class="col-lg-4 offset-lg-1  mb-4">
+          <div class="footer-wigdet">
+            <h6 class="mb-3">Hit Us Up:</h6>
+            <ul class="address">
+              <li><span class="icon"><img src="images/mail.png" /></span>mythrieventplanner@gmail.com</li>
+              <li><span class="icon"><img src="images/phone-call.png" /></span>+91 8978364838</li>
+              <!-- <li><span class="icon"><img src="images/home.svg" /></span>27 Division St, New York, NY 10002, USA</li>-->
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="footer-wigdet">
+            <h6 class="mb-3">Find Us:</h6>
+            <ul class="address">
+              <li><a href="#">- Facebook</a></li>
+              <li><a href="#">- Twitter</a></li>
+              <li><a href="#">- Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-12 copyright">
+            <p>© 2025 Mythri Event Planners. All Rights Reserved.Designed By IES</p>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <!-- <script src="js/jquery.swipebox.js"></script> -->
+  <!-- <script src="js/masonry.min.js"></script> -->
+  <!-- <script src="js/wow.min.js"></script> -->
+ <!-- <script> new WOW().init(); </script> -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <script>
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    nav: true
+                  },
+                  600: {
+                    items: 3,
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    nav: false
+                  },
+                  1000: {
+                    items: 2,
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    nav: true,
+                    loop: true,
+                    dots: false,
+                    margin: 20
+                  }
+                }
+              })
+            })
+          </script>
+
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
+
+          <script type="text/javascript">
+            $(document).ready( function() {
+
+  var itemSelector = '.grid-item';
+
+  var $container = $('#container').isotope({
+    itemSelector: itemSelector,
+    masonry: {
+      columnWidth: itemSelector,
+      isFitWidth: true
+    }
+  });
+
+  //Ascending order
+  var responsiveIsotope = [
+    [480, 7],
+    [720, 10]
+  ];
+
+  var itemsPerPageDefault = 12;
+  var itemsPerPage = defineItemsPerPage();
+  var currentNumberPages = 1;
+  var currentPage = 1;
+  var currentFilter = '*';
+  var filterAtribute = 'data-filter';
+  var pageAtribute = 'data-page';
+  var pagerClass = 'isotope-pager';
+
+  function changeFilter(selector) {
+    $container.isotope({
+      filter: selector
+    });
+  }
+
+
+  function goToPage(n) {
+    currentPage = n;
+
+    var selector = itemSelector;
+      selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+      selector += '['+pageAtribute+'="'+currentPage+'"]';
+
+    changeFilter(selector);
+  }
+
+  function defineItemsPerPage() {
+    var pages = itemsPerPageDefault;
+
+    for( var i = 0; i < responsiveIsotope.length; i++ ) {
+      if( $(window).width() <= responsiveIsotope[i][0] ) {
+        pages = responsiveIsotope[i][1];
+        break;
+      }
+
+
+
+    }
+
+    return pages;
+  }
+
+  function setPagination() {
+
+    var SettingsPagesOnItems = function(){
+
+      var itemsLength = $container.children(itemSelector).length;
+
+      var pages = Math.ceil(itemsLength / itemsPerPage);
+      var item = 1;
+      var page = 1;
+      var selector = itemSelector;
+        selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+
+      $container.children(selector).each(function(){
+        if( item > itemsPerPage ) {
+          page++;
+          item = 1;
+        }
+        $(this).attr(pageAtribute, page);
+        item++;
+      });
+
+      currentNumberPages = page;
+
+    }();
+
+    var CreatePagers = function() {
+
+      var $isotopePager = ( $('.'+pagerClass).length == 0 ) ? $('<div class="'+pagerClass+'"></div>') : $('.'+pagerClass);
+
+      $isotopePager.html('');
+
+      for( var i = 0; i < currentNumberPages; i++ ) {
+        var $pager = $('<a href="javascript:void(0);" class="pager" '+pageAtribute+'="'+(i+1)+'"></a>');
+          $pager.html(i+1);
+
+          $pager.click(function(){
+            var page = $(this).eq(0).attr(pageAtribute);
+            goToPage(page);
+          });
+
+        $pager.appendTo($isotopePager);
+      }
+
+      $container.after($isotopePager);
+
+    }();
+
+  }
+
+  setPagination();
+  goToPage(1);
+
+  //Adicionando Event de Click para as categorias
+  $('.filters a').click(function(){
+    var filter = $(this).attr(filterAtribute);
+    currentFilter = filter;
+
+    setPagination();
+    goToPage(1);
+
+
+  });
+
+  //Evento Responsivo
+  $(window).resize(function(){
+    itemsPerPage = defineItemsPerPage();
+    setPagination();
+  });
+
+
+
+});
+
+
+
+ $(document).ready( function() {
+
+// filter items on button click
+$('.filter-button-group').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $('.grid').isotope({ filter: filterValue });
+  $('.filter-button-group li').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+
+
+ $(document).ready( function() {
+
+// filter items on button click
+$('.isotope-pager').on( 'click', 'a', function() {
+  var filterValue = $(this).attr('data-page');
+
+  $('.isotope-pager a').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+$('.popupimg').magnificPopup({
+  type: 'image',
+  mainClass: 'mfp-with-zoom',
+  gallery:{
+      enabled:true
+    },
+
+  zoom: {
+    enabled: true,
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
+
+    opener: function(openerElement) {
+
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+  }
+}
+
+});
+
+});
+          </script>
+
+</body>
+
+</html><script src="./js/main.js"></script>

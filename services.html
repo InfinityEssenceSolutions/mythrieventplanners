@@ -1,320 +1,523 @@
 
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Mythri Event Planner</title>
-    <meta name="description" content="Gaala Wedding Planners is an innovative company specialized in organizing events with an enviable reputation for high quality and customer focus. Our approach is professional, passionate and focused placing the customer at the heart of everything we do.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keyword" content="wedding planner, guruvayoor Wedding, event management, stage decorator, event management in thrissur">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/loader.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Mythri Event Planner</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/swipebox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-	<!-- CSS here -->
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="./assets/css/slicknav.csss">
-    <link rel="stylesheet" href="./assets/css/flaticon.css">
-    <link rel="stylesheet" href="./assets/css/gijgo.css">
-	<link rel="stylesheet" href="./assets/css/animate.min.css">
-	<link rel="stylesheet" href="./assets/css/magnific-popup.css">
-	<link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="./assets/css/themify-icons.css">
-	<link rel="stylesheet" href="./assets/css/slick.css">
-	<link rel="stylesheet" href="./assets/css/nice-select.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+<!-- owl start -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- owl end -->
+
+<link rel="shortcut icon" href="./images/loader.png">
+
+  <style>
+    .swiper-pagination-bullet {
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      border: 4px #555 solid;
+      opacity: 1;
+      background: #fff;
+    }
+
+    .swiper-pagination-bullet-active {
+      border: 4px #111 solid;
+    }
+  </style>
+
+
+
+
+
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="./assets/images/loader.png" alt="">
-                </div>
-            </div>
-        </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+      <!--  Show this only on mobile to medium screens  -->
+      <a class="navbar-brand d-lg-none" href="index.html">
+        <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 150px;"/>
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--  Use flexbox utility classes to change how the child elements are justified  -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+        <a class="navbar-brand d-none d-lg-block" href="index.html">
+            <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 200px;"/>
+            </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="tel:8978364838">Call: +91 8978364838</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn-default" href="quote.html">Get a Quote</a>
+              </li>
+
+            </ul>
+      </div>
+    </nav>
+  </header><section class="breadcrum" style="background-image: url(images/contact.jpeg);">
+  <div class="hightlight-flower" style="z-index: 3;">
+    <div id="scene3">
+      <img src="images/flowers3.webp" class="img-fluid" data-depth="0.30" />
     </div>
-    <!-- Preloader Start -->
-<header>
-    <!--? Header Start -->
-    <div class="header-area">
-        <div class="main-header header-sticky">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Logo -->
-                    <div class="col-xl-2 col-lg-2 col-md-1">
-                        <div class="logo">
-                            <a href="index.html"><img src="./assets/images/Mythri Events Logo.png" alt="" style="max-width: 200px;"></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-10 col-lg-10 col-md-10">
-                        <div class="menu-main d-flex align-items-center justify-content-end">
-                            <!-- Main-menu -->
-                            <div class="main-menu f-right d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about_us.html">About</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <!-- <li><a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">Element</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="#Contact">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="https://wa.me/+918978364838" class="btn header-btn"><i class="fab fa-whatsapp"></i> Chat with Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu -->
-                    <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="container">
+    <div class="breadcrum-content text-center">
+      <h1 class="wow animate__animated animate__slideInDown" data-wow-duration="2s">Enjoy Our Services</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Services</li>
+        </ol>
+      </nav>
     </div>
-    <!-- Header End -->
-</header>
-<main>
-    <!--? slider Area Start-->
+  </div>
+</section>
+<section class="section-padding">
+    <div class="hightlight-flower">
+        <div id="scene3">
+          <img src="./images/flowers3.webp" class="img-fluid" data-depth="0.30" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="titlemain text-center mb-5">
+            <div class="title">
+              <div class="subheading">What we<span></span>Offer</div>
+              <h2 class="heading">Our Core Services</h2>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="1s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/birthday.png" alt="icon"></a>
+              </div>
+              <h4>Birthday Celebrations</h4>
+              <p>Curating birthday celebrations planned to perfection while focusing on all details  </p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="2s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/baby.png" alt="icon"></a>
+              </div>
+              <h4>Baby Showers</h4>
+              <p>Plan a perfect baby shower that stays true to the honoree’s personal taste and style with us </p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="3s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/corporate.gif" alt="icon"></a>
+              </div>
+              <h4>Corporate Events</h4>
+              <p>Creating corporate events that go well along with the mission of the company</p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="2s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/wedding.png" alt="icon"></a>
+              </div>
+              <h4>Wedding Celebrations</h4>
+              <p>Make your near and dear ones feel special as you plan family events with our bespoke event planning services.</p>
+            </div>
+          </div>
 
-    <!-- slider Area End-->
-    <!--? About Law Start-->
-    <section class="team-area pt-100 pb-100 section-bg" data-background="./assets/images/sections.jpg" id="Services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle section-tittle2 mb-50 text-center">
-                        <h2>Services We Do.</h2>
-                        <p>We listen to you, working closely and intently with you and your family to create a special event that is completely unique as you want it to be. </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/barasala.jpg" alt="" style = "height: 350px">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Barasala / Cradle Cermony</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/birthday.webp" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Birthday Decorations</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/bride.avif" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Bridal / Groom Cermony</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/haldi.jpg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Haldi / Mehandi</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/pelli.jpeg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Pelli Pandiri</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/entrys.jpg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Special Entry's</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/sangeeth.jpeg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">Sangeeth Celebrations</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="./assets/images/house_warming.jpeg" style = "height: 350px" alt="">
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="#">House Warming Cermony</a></h3>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="2s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/baby.png" alt="icon"></a>
+              </div>
+              <h4>Baby Showers</h4>
+              <p>Plan a perfect baby shower that stays true to the honoree’s personal taste and style with us </p>
             </div>
-        </div>
-    </section>
-    <!-- About Law End-->
+          </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="3s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/corporate.gif" alt="icon"></a>
+              </div>
+              <h4>Corporate Events</h4>
+              <p>Creating corporate events that go well along with the mission of the company</p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="2s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/wedding.png" alt="icon"></a>
+              </div>
+              <h4>Wedding Celebrations</h4>
+              <p>Make your near and dear ones feel special as you plan family events with our bespoke event planning services.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="1s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"> <img src="./images/birthday.png" alt="icon"></a>
+              </div>
+              <h4>Birthday Celebrations</h4>
+              <p>Curating birthday celebrations planned to perfection while focusing on all details  </p>
+            </div>
+          </div>
 
-    </main>
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding" id="Contact">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                             <div class="footer-tittle">
-                                 <div class="footer-logo mb-20">
-                                    <a href="index.html"><img src="./assets/images/Mythri Events Logo.png" alt="" style="max-width: 220px"></a>
-                                </div>
-                                 <div class="footer-pera">
-                                     <p>We makes your events stand out from conventional events decors and planners. We gather our strength from our long experience and our creativity.</p>
-                                </div>
-                             </div>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Contact Info</h4>
-                                <ul>
-                                    <li>
-                                        <p>Address :Ukkunagaram, Vishakapatnam, Pin 530032.</p>
-                                    </li>
-                                    <li><a href="tel:+918978364838">Phone : +91 8978364838</a>, <a href="tel:+919119345672"> +91 9119345672</a></li>
-                                    <!-- <li><a href="tel:+918848318806">Phone : +91 8848318806</a></li> -->
-                                    <li><a href="">Email : mythrieventplanners@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Quick Link</h4>
-                                <ul>
-                                    <li><a href="#Home"> Home</a></li>
-                                    <li><a href="#About">About Us</a></li>
-                                    <li><a href="#Services">Services</a></li>
-                                    <li><a href="#Portfolio">Portfolio</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Social Link</h4>
-                                <ul>
-                                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                                    <li><a href="https://wa.me/+918978364838" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-lg-3 wow animate__animated animate__flipInX" data-wow-duration="1s">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <a href = "service_page.html"><img src="./images/birthday.png" alt="icon"></a>
+              </div>
+              <h4>Birthday Celebrations</h4>
+              <p>Curating birthday celebrations planned to perfection while focusing on all details  </p>
             </div>
+          </div>
         </div>
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area footer-bg">
-            <div class="container">
-                <div class="footer-border">
-                     <div class="row d-flex justify-content-between align-items-center">
-                         <div class="col-xl-10 col-lg-8 ">
-                             <div class="footer-copy-right">
-                                 <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart" aria-hidden="true" style="color: #fff;"></i> by <a href="#" target="_blank" style="color: #000;"> IES</a></p>
-                             </div>
-                         </div>
-                         <div class="col-xl-2 col-lg-4">
-                             <div class="footer-social f-right">
-                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://wa.me/+918978364838" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
-                             </div>
-                         </div>
-                     </div>
-                </div>
+
+      </div>
+</section>
+
+
+<footer class="section-padding bg-alternative pb-3">
+    <div class="container">
+      <div class="text-center mb-5">
+      <img src="./images/Mythri Events Logo.png" class="img-fluid" alt="logo" style = "width: 200px;"/>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 mb-4">
+          <div class="footer-wigdet">
+            <h5 class="mb-3">Request a Callback</h5>
+            <p>Don’t miss our significant news and season sales.</p>
+          </div>
+          <form action="include/sendcallback" method="POST">
+            <div class="mb-3">
+              <input type="number" name="phone" class="form-control" placeholder="Enter Your phone Number" required>
             </div>
+
+            <button name="submit" type="submit" class="btn-default">Submit</button>
+          </form>
         </div>
-        <!-- Footer End-->
-    </footer>
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#" style = "color: #fff"> <i class="fas fa-level-up-alt"></i></a>
+
+        <div class="col-lg-4 offset-lg-1  mb-4">
+          <div class="footer-wigdet">
+            <h6 class="mb-3">Hit Us Up:</h6>
+            <ul class="address">
+              <li><span class="icon"><img src="images/mail.png" /></span>mythrieventplanner@gmail.com</li>
+              <li><span class="icon"><img src="images/phone-call.png" /></span>+91 8978364838</li>
+              <!-- <li><span class="icon"><img src="images/home.svg" /></span>27 Division St, New York, NY 10002, USA</li>-->
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="footer-wigdet">
+            <h6 class="mb-3">Find Us:</h6>
+            <ul class="address">
+              <li><a href="#">- Facebook</a></li>
+              <li><a href="#">- Twitter</a></li>
+              <li><a href="#">- Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-12 copyright">
+            <p>© 2025 Mythri Event Planners. All Rights Reserved.Designed By IES</p>
+        </div>
+
+
+      </div>
     </div>
+  </footer>
 
-    <!-- JS here -->
 
-    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="./assets/js/jquery.slicknav.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <!-- <script src="js/jquery.swipebox.js"></script> -->
+  <!-- <script src="js/masonry.min.js"></script> -->
+  <!-- <script src="js/wow.min.js"></script> -->
+ <!-- <script> new WOW().init(); </script> -->
 
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="./assets/js/wow.min.js"></script>
-    <script src="./assets/js/animated.headline.js"></script>
-    <script src="./assets/js/jquery.magnific-popup.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Date Picker -->
-    <script src="./assets/js/gijgo.min.js"></script>
-    <!-- Nice-select, sticky -->
-    <script src="./assets/js/jquery.nice-select.min.js"></script>
-    <script src="./assets/js/jquery.sticky.js"></script>
+ <script>
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    nav: true
+                  },
+                  600: {
+                    items: 3,
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    nav: false
+                  },
+                  1000: {
+                    items: 2,
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    nav: true,
+                    loop: true,
+                    dots: false,
+                    margin: 20
+                  }
+                }
+              })
+            })
+          </script>
 
-    <!-- counter , waypoint -->
-    <script src="./assets/js/jquery.counterup.min.js"></script>
-    <script src="./assets/js/waypoints.min.js"></script>
-    <script src="./assets/js/jquery.countdown.min.js"></script>
-    <!-- contact js -->
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/jquery.form.js"></script>
-    <script src="./assets/js/jquery.validate.min.js"></script>
-    <script src="./assets/js/mail-script.js"></script>
-    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
 
-    <!-- Jquery Plugins, main Jquery -->
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/main.js"></script>
+          <script type="text/javascript">
+            $(document).ready( function() {
 
-    </body>
-</html>
+  var itemSelector = '.grid-item';
+
+  var $container = $('#container').isotope({
+    itemSelector: itemSelector,
+    masonry: {
+      columnWidth: itemSelector,
+      isFitWidth: true
+    }
+  });
+
+  //Ascending order
+  var responsiveIsotope = [
+    [480, 7],
+    [720, 10]
+  ];
+
+  var itemsPerPageDefault = 12;
+  var itemsPerPage = defineItemsPerPage();
+  var currentNumberPages = 1;
+  var currentPage = 1;
+  var currentFilter = '*';
+  var filterAtribute = 'data-filter';
+  var pageAtribute = 'data-page';
+  var pagerClass = 'isotope-pager';
+
+  function changeFilter(selector) {
+    $container.isotope({
+      filter: selector
+    });
+  }
+
+
+  function goToPage(n) {
+    currentPage = n;
+
+    var selector = itemSelector;
+      selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+      selector += '['+pageAtribute+'="'+currentPage+'"]';
+
+    changeFilter(selector);
+  }
+
+  function defineItemsPerPage() {
+    var pages = itemsPerPageDefault;
+
+    for( var i = 0; i < responsiveIsotope.length; i++ ) {
+      if( $(window).width() <= responsiveIsotope[i][0] ) {
+        pages = responsiveIsotope[i][1];
+        break;
+      }
+
+
+
+    }
+
+    return pages;
+  }
+
+  function setPagination() {
+
+    var SettingsPagesOnItems = function(){
+
+      var itemsLength = $container.children(itemSelector).length;
+
+      var pages = Math.ceil(itemsLength / itemsPerPage);
+      var item = 1;
+      var page = 1;
+      var selector = itemSelector;
+        selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+
+      $container.children(selector).each(function(){
+        if( item > itemsPerPage ) {
+          page++;
+          item = 1;
+        }
+        $(this).attr(pageAtribute, page);
+        item++;
+      });
+
+      currentNumberPages = page;
+
+    }();
+
+    var CreatePagers = function() {
+
+      var $isotopePager = ( $('.'+pagerClass).length == 0 ) ? $('<div class="'+pagerClass+'"></div>') : $('.'+pagerClass);
+
+      $isotopePager.html('');
+
+      for( var i = 0; i < currentNumberPages; i++ ) {
+        var $pager = $('<a href="javascript:void(0);" class="pager" '+pageAtribute+'="'+(i+1)+'"></a>');
+          $pager.html(i+1);
+
+          $pager.click(function(){
+            var page = $(this).eq(0).attr(pageAtribute);
+            goToPage(page);
+          });
+
+        $pager.appendTo($isotopePager);
+      }
+
+      $container.after($isotopePager);
+
+    }();
+
+  }
+
+  setPagination();
+  goToPage(1);
+
+  //Adicionando Event de Click para as categorias
+  $('.filters a').click(function(){
+    var filter = $(this).attr(filterAtribute);
+    currentFilter = filter;
+
+    setPagination();
+    goToPage(1);
+
+
+  });
+
+  //Evento Responsivo
+  $(window).resize(function(){
+    itemsPerPage = defineItemsPerPage();
+    setPagination();
+  });
+
+
+
+});
+
+
+
+ $(document).ready( function() {
+
+// filter items on button click
+$('.filter-button-group').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $('.grid').isotope({ filter: filterValue });
+  $('.filter-button-group li').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+
+
+ $(document).ready( function() {
+
+// filter items on button click
+$('.isotope-pager').on( 'click', 'a', function() {
+  var filterValue = $(this).attr('data-page');
+
+  $('.isotope-pager a').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+$('.popupimg').magnificPopup({
+  type: 'image',
+  mainClass: 'mfp-with-zoom',
+  gallery:{
+      enabled:true
+    },
+
+  zoom: {
+    enabled: true,
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
+
+    opener: function(openerElement) {
+
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+  }
+}
+
+});
+
+});
+          </script>
+
+</body>
+
+</html><script>
+  const scene3 = document.getElementById('scene3');
+  const parallaxInstance3 = new Parallax(scene3, {
+    relativeInput: true
+  });
+  let macy = Macy({
+    container: '.portfolio-masonry',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 15,
+    columns: 1,
+    breakAt: {
+      1400: 1,
+      940: 1,
+      520: 1,
+      400: 1
+    }
+  });;
+
+  $('.swipebox').swipebox();
+</script>
